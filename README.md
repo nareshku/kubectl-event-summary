@@ -73,18 +73,21 @@ kubectl event-summary -n kube-system --severity warning --search api --since 1h
 
 ## Sample Output
 ```
-kubectl event-summary -n kube-system --since 1h --group-by type
-Total Events in cluster: 50 (Warnings: 5, Errors: 1)
-Filtered Events: 10 (Warnings: 2, Errors: 0)
+# Search eventswith a string
+$ ./kubectl-event-summary -n kube-system --since 1h --search coredns
+
+Total Events in cluster: 7 (Warnings: 1, Errors: 0)
 ---
 
-=== type=Normal ===
-Events in group: 8 (Warnings: 0, Errors: 0)
-[Normal] kube-system/coredns-abc: Started container...
-
-=== type=Warning ===
-Events in group: 2 (Warnings: 2, Errors: 0)
-[Warning] kube-system/coredns-xyz: Readiness probe failed...
+=== all events ===
+Events in group: 7 (Warnings: 1, Errors: 0)
+[Normal] kube-system/coredns-668d6bf9bc-jmpqz: Stopping container coredns (count: 1)
+[Warning] kube-system/coredns-668d6bf9bc-jmpqz: Readiness probe failed: Get "http://10.244.0.5:8181/ready": dial tcp 10.244.0.5:8181: connect: connection refused (count: 1)
+[Normal] kube-system/coredns-668d6bf9bc-wkdgd: Successfully assigned kube-system/coredns-668d6bf9bc-wkdgd to kind-control-plane (count: 0)
+[Normal] kube-system/coredns-668d6bf9bc-wkdgd: Container image "registry.k8s.io/coredns/coredns:v1.11.3" already present on machine (count: 1)
+[Normal] kube-system/coredns-668d6bf9bc-wkdgd: Created container: coredns (count: 1)
+[Normal] kube-system/coredns-668d6bf9bc-wkdgd: Started container coredns (count: 1)
+[Normal] kube-system/coredns-668d6bf9bc: Created pod: coredns-668d6bf9bc-wkdgd (count: 1)
 ```
 
 
