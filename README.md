@@ -32,11 +32,11 @@ git clone https://github.com/nareshku/kubectl-event-summary.git
 # Build the plugin
 
 cd kubectl-event-summary
-go build -o kubectl-event_summary ./cmd/kubectl-event-summary
+go build -o kubectl-event-summary ./cmd/kubectl-event-summary
 
 # Move to PATH
 
-sudo mv kubectl-event_summary /usr/local/bin/
+sudo mv kubectl-event-summary /usr/local/bin/
 ```
 
 ## Usage Examples
