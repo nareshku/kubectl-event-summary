@@ -4,8 +4,8 @@ import (
 	"github.com/spf13/cobra"
 	"time"
 	
-	"kubectl-event-summary/pkg/events"
-	"kubectl-event-summary/pkg/types"
+	"github.com/nareshku/kubectl-event-summary/pkg/events"
+	"github.com/nareshku/kubectl-event-summary/pkg/types"
 )
 
 // AddFlags adds flags to the specified command.

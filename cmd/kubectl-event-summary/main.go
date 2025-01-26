@@ -4,7 +4,7 @@ package main
 import (
     "os"
 
-    "kubectl-event-summary/pkg/cmd"
+    "github.com/nareshku/kubectl-event-summary/pkg/cmd"
 )
 
 func main() {

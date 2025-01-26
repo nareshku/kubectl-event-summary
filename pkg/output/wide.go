@@ -4,7 +4,7 @@ import (
     "fmt"
     "io"
     
-    "kubectl-event-summary/pkg/events"
+    "github.com/nareshku/kubectl-event-summary/pkg/events"
 )
 
 type WideFormatter struct {

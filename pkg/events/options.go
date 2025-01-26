@@ -12,7 +12,7 @@ import (
     "k8s.io/client-go/kubernetes"
     "k8s.io/utils/ptr"
 
-    "kubectl-event-summary/pkg/types"
+    "github.com/nareshku/kubectl-event-summary/pkg/types"
 )
 
 // Complete completes all the required options

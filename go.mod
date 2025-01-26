@@ -1,5 +1,5 @@
 // go.mod
-module kubectl-event-summary
+module github.com/nareshku/kubectl-event-summary
 
 go 1.20
 

@@ -15,7 +15,7 @@ import (
     "k8s.io/utils/ptr"
     corev1 "k8s.io/api/core/v1"
 
-    "kubectl-event-summary/pkg/events"
+    "github.com/nareshku/kubectl-event-summary/pkg/events"
 )
 
 // EventSummaryOptions contains the options for the event-summary command

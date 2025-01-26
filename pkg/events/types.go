@@ -5,7 +5,7 @@ import (
 
 	"k8s.io/cli-runtime/pkg/genericclioptions"
 	
-	"kubectl-event-summary/pkg/types"
+	"github.com/nareshku/kubectl-event-summary/pkg/types"
 )
 
 // EventSummaryOptions contains the options for the event-summary command

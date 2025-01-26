@@ -5,7 +5,7 @@ import (
 	"sort"
 	"fmt"
 	corev1 "k8s.io/api/core/v1"
-	"kubectl-event-summary/pkg/types"
+	"github.com/nareshku/kubectl-event-summary/pkg/types"
 )
 
 func buildGroupKey(event corev1.Event, groupLevels []string) string {

@@ -3,7 +3,7 @@ package output
 import (
 	"io"
 	
-	"kubectl-event-summary/pkg/types"
+	"github.com/nareshku/kubectl-event-summary/pkg/types"
 )
 
 // Formatter defines the interface for output formatters
